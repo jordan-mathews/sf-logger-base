@@ -2,11 +2,11 @@ public with sharing class Logger {
   private static Logger current;
   private List<Log> logList;
 
-  public Logger() {
+  private Logger() {
     this.logList = new List<Log>();
   }
 
-  public Logger getCurrent() {
+  public static Logger getCurrent() {
     if (current == null) {
       current = new Logger();
     }
