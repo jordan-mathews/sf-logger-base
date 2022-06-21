@@ -10,7 +10,7 @@ Lightweight package used for logging in Salesforce. Uses platform events and flo
 Logger.getCurrent().publish('Test Error Message', LogLevel.ERROR);
 ```
 
-### Add multiple events and then publish all at once.
+### Add multiple events and then publish all at once
 
 ```
 Logger.getCurrent().add('Test Log Message 1', LogLevel.ERROR);
